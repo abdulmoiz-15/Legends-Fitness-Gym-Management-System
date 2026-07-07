@@ -1,0 +1,617 @@
+h2,h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.highlight{
+    font-size: 3rem;
+    color: orangered;
+}
+
+h1{
+    font-size: 6rem;
+    letter-spacing: 1px;
+    text-shadow: 0 0 1px black
+}
+h1 .highlight{font-size: 6rem;}
+
+.about-page{
+    *{font-family: "New Amsterdam", sans-serif;}
+}
+
+/* Hero Section */
+.about-hero {   
+    background: url('https://cdn.shopify.com/s/files/1/0141/5242/t/16/assets/fitsix-4-bright_LIQo.jpg?v=1620121722375&quot');
+    background-position: center;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 150px 100px 100px;
+    color: white;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    line-height: 1.6;
+    font-family: "Outfit", sans-serif;
+    color: #ccc;
+}
+
+.cta-button {
+    width: max-content;
+    padding: 15px 55px;
+    font-size: 20px;
+    background: orangered;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #ff8533;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3);
+}
+
+/* Our Story */
+.our-story {
+    border-radius: 20px;
+    margin: 80px 100px;
+    padding: 60px 40px;
+    color: white;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(255, 106, 0, 0.247) 0%, transparent 50%),
+        #0a0a0a;
+}
+
+.story-content {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.story-content p {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.story-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 3rem;
+    color: orangered;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-family: "Outfit", sans-serif;
+    color: #ccc;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Mission & Values */
+.mission-values {
+    background: 
+        repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,107,0,0.03) 10px, rgba(255,107,0,0.03) 20px),
+        #0a0a0a;
+    margin: 80px 100px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    color: white;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-card {
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+}
+
+.value-card .material-symbols-outlined {
+    font-size: 3.5rem;
+    color: orangered;
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.value-card p {
+    font-family: "Outfit", sans-serif;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Trainers Section */
+.trainers-section {
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(255, 106, 0, 0.247) 0%, transparent 50%),
+        #0a0a0a;
+    margin: 80px 100px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-family: "Outfit", sans-serif;
+    color: #ccc;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trainers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.trainer-card {
+    width: 45%;
+    background: linear-gradient(135deg, rgba(255,107,0,0.1) 0%, transparent 100%);
+    background-color: black;
+    border: 1px solid rgba(255,107,0,0.2);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: left;
+    transition: all 0.3s ease;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.trainer-card:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(135deg, rgba(255,107,0,0.15) 0%, transparent 100%);
+    border-color: orangered;
+    box-shadow: 0 10px 30px rgba(255, 107, 0, 0.2);
+}
+
+.trainer-icon {
+    flex-shrink: 0;
+}
+
+.trainer-icon .material-symbols-outlined {
+    font-size: 3rem;
+    color: orangered;
+    background: rgba(255, 107, 0, 0.1);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.trainer-info {
+    flex-grow: 1;
+}
+
+.trainer-info h3 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.trainer-title {
+    font-family: "Outfit", sans-serif;
+    color: orangered;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.trainer-specialties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.trainer-specialties span {
+    background: rgba(255, 107, 0, 0.1);
+    color: orangered;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-family: "Outfit", sans-serif;
+    border: 1px solid rgba(255, 107, 0, 0.3);
+}
+
+.trainer-quote {
+    font-family: "Outfit", sans-serif;
+    color: #ccc;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 15px 0;
+    padding-left: 10px;
+    border-left: 3px solid orangered;
+}
+
+.trainer-cert {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 107, 0, 0.2);
+}
+
+.trainer-cert .material-symbols-outlined {
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+.trainer-cert div {
+    font-family: "Outfit", sans-serif;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Facilities */
+.facilities {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin: 80px 0;
+    padding: 60px 100px;
+    color: white;
+    background-color: rgb(34, 34, 34);
+}
+
+.facilities-content {
+    flex: 1;
+}
+
+
+.facilities-content p {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.facility-list {
+    display: grid;
+    gap: 15px;
+}
+
+.facility-list p {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    color: #ccc;
+}
+
+.facility-list .material-symbols-outlined {
+    color: orangered;
+    font-size: 1.5rem;
+}
+
+.facilities-gallery {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.facilities-gallery img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 2px black;
+}
+
+/* Community Impact */
+.community-impact {
+    background-color: rgba(104, 104, 104, 0.219);
+    display: flex;
+    gap: 60px;
+    margin: 80px 100px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    color: white;
+}
+
+.impact-content {
+    flex: 1;
+}
+
+
+.impact-content p {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.impact-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.highlight-item {
+    text-align: center;
+}
+
+.highlight-item h3 {
+    font-size: 2.5rem;
+    color: orangered;
+    margin-bottom: 10px;
+}
+
+.highlight-item p {
+    font-family: "Outfit", sans-serif;
+    font-size: 0.9rem;
+    color: #ccc;
+    margin: 0;
+}
+
+.testimonial-quote {
+    flex: 1;
+    padding: 40px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial-quote p {
+    font-family: "Outfit",sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.quote-author {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.quote-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.quote-author h4 {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.quote-author p {
+    font-family: "Outfit", sans-serif;
+    font-size: 0.9rem;
+    color: #ccc;
+    margin: 0;
+    font-style: normal;
+}
+
+/* Final CTA */
+.about-cta {
+    background: #0a0a0a;
+    margin: 80px 0 40px;
+    width: 100%;
+    padding: 80px 40px;
+    color: white;
+    text-align: center;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    color: #ccc;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cta-primary {
+    padding: 15px 45px;
+    background: orangered;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.cta-primary:hover {
+    background: #ff8533;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 107, 0, 0.4);
+}
+
+.cta-secondary {
+    padding: 18px 45px;
+    background: transparent;
+    color: orangered;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    border: 2px solid orangered;
+    transition: all 0.3s ease;
+}
+
+.cta-secondary:hover {
+    background: orangered;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 107, 0, 0.4);
+}
+
+@media (max-width: 1200px) {
+    .about-hero,
+    .our-story,
+    .mission-values,
+    .trainers-section,
+    .community-impact {
+        margin: 60px 60px;
+        padding: 50px 30px;
+    }
+    .facilities { padding: 60px 60px; }
+    .hero-content h1 { font-size: 5rem; }
+    .trainer-card { width: 48%; }
+}
+
+@media (max-width: 992px) {
+    .about-hero,
+    .our-story,
+    .mission-values,
+    .community-impact {
+        margin: 40px 30px;
+        padding: 40px 25px;
+    }
+
+    .about-hero {
+        padding: 120px 40px 80px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h1 { font-size: 4rem; }
+    .hero-content p { font-size: 1rem; }
+
+    .facilities {
+        flex-direction: column;
+        padding: 50px 40px;
+        gap: 40px;
+        margin: 0;
+    }
+    .facilities-content, .facilities-gallery { width: 100%; }
+    .facilities-gallery { flex-direction: row; }
+    .facilities-gallery img { width: 49%; height: 200px; }
+
+    .trainer-card { width: 100%; }
+    .trainers-section { margin: 40px 30px; padding: 40px 20px; }
+
+    .community-impact { flex-direction: column; gap: 30px; }
+    .impact-highlights { grid-template-columns: repeat(3, 1fr); }
+
+    .story-stats { gap: 30px; }
+    .stat h3 { font-size: 2.5rem; }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 100px 20px 60px;
+        margin: 0;
+        gap: 20px;
+    }
+    h1, h1 .highlight { font-size: 3.5rem !important; }
+
+    .our-story,
+    .mission-values,
+    .trainers-section,
+    .community-impact {
+        margin: 0;
+        padding: 40px 20px;
+        border-radius: 10px;
+    }
+
+    h2, h2 .highlight { font-size: 2.5rem; }
+
+    .values-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+    .value-card { padding: 25px 15px; }
+    .value-card h3 { font-size: 1.3rem; }
+
+    .trainer-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .trainer-icon { margin: 0 auto; }
+    .trainer-quote { border-left: none; border-top: 1px solid rgba(255,107,0,0.2); padding: 15px 0 0; }
+    .trainer-specialties { justify-content: center; }
+    .trainer-cert { justify-content: center; }
+
+    .facilities {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 25px;
+    }
+    .facilities-gallery { flex-direction: column; }
+    .facilities-gallery img { width: 100%; height: 200px; }
+
+    .impact-highlights { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+    .highlight-item h3 { font-size: 2rem; }
+
+    .testimonial-quote { padding: 20px; }
+    .testimonial-quote p { font-size: 1.2rem; }
+
+    .about-cta { padding: 60px 20px; margin: 0; }
+    .cta-buttons { flex-direction: column; align-items: center; gap: 15px; }
+    .cta-primary, .cta-secondary { width: 100%; max-width: 280px; text-align: center; display: block; padding: 14px 20px; }
+
+    .story-stats { gap: 20px; }
+    .stat h3 { font-size: 2rem; }
+}

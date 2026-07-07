@@ -1,0 +1,717 @@
+h2, .highlight{
+    font-size: 3rem;
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+.highlight{
+    margin: 0 10px;
+    color: orangered;
+}
+
+.membership-page {
+    *{font-family: "New Amsterdam", sans-serif;}
+}
+
+/* Hero Section */
+.membership-hero {
+    width: 100%;
+    background: url('pics/vecteezy_a-dumbbell-and-water-bottle-on-a-surface-with-a-towel-in-a_65700308.jpeg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 150px 100px;
+    color: white;
+}
+
+.hero-content{width: 50%;}
+.hero-content h1 {
+    line-height: 1;
+    font-size: 4.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    .highlight{font-size: 4rem; margin: 0;}
+}
+
+.hero-content p {
+    text-shadow: 0 0 2px black;
+    font-size: 1.2rem;
+    width: 70%;
+    margin-bottom: 50px;
+    line-height: 1.6;
+    font-family: "Outfit", sans-serif;
+    color: #ccc;
+}
+
+.hero-image img{
+    width: 70%;
+    border: 1px solid red;
+} 
+
+.cta-button {
+    padding: 15px 40px;
+    font-size: 18px;
+    background: orangered;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #ff8533;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3);
+}
+
+/* Comparison Table */
+.membership-comparison {
+    padding: 60px 70px 80px;
+    background: linear-gradient(135deg, rgba(34, 34, 34, 0.95) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.membership-comparison h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-family: "Outfit", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.comparison-table {
+    background-color: rgba(34, 34, 34, 0.9);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.table-header {
+    display: flex;
+    background: #0a0a0a;
+    color: white;
+    padding: 30px 0;
+}
+
+.features{display: none; }
+.feature-col {
+    flex: 2;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+}
+.feature-col.header-title{
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 2.5rem;
+}
+.plan-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+    color: white;
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+}
+
+.plan-col.popular {
+    border-radius: 20px;
+    background: orangered;
+    border: 2px solid white;
+    color: white;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: orangered;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.plan-col h3 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+.plan-col .price {
+    font-size: 2.5rem;
+}
+
+.plan-col .price span {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.7);
+}
+
+.select-plan {
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 20px;
+    background: white;
+    color: #0a0a0a;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    width: 50%;
+}
+
+.plan-col.popular .select-plan {
+    background: #0a0a0a;
+    color: white;
+}
+
+.select-plan:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
+}
+
+.table-body {
+    padding: 0;
+}
+
+.table-row {
+    display: flex;
+    padding: 25px 0;
+    border-bottom: 1px solid #eee;
+    transition: background 0.3s ease;
+}
+
+.table-row:hover {
+    background-color: rgba(255, 68, 0, 0.150);
+}
+
+.table-row .feature-col {
+    font-weight: normal;
+    color: #ccc;
+}
+
+.table-row .plan-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+/* Join Process */
+.join-process {
+    padding: 60px 180px;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    color: white;
+}
+
+.join-process h2 {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.process-steps {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto 30px;  
+}
+
+.step {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.step:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-5px);
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: orangered;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: 0 auto 20px;
+}
+
+.step h3 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.step p {
+    font-family: "Outfit", sans-serif;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* FAQ Checkbox Styling */
+.faq-section{
+    padding: 40px;
+}
+.faq-section h2{
+    margin-bottom: 50px;
+    color: white;
+}
+.faq-checkbox {
+    display: none; /* Hide the actual checkbox */
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.faq-question {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(34, 34, 34, 0.9);
+    transition: all 0.3s ease;
+    margin: 0;
+}
+
+.faq-question:hover {
+    opacity: 0.7;
+}
+
+.faq-question h3 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+}
+
+.faq-question .material-symbols-outlined {
+    color: orangered;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+/* Hide minus icon by default */
+.faq-question .minus-icon {
+    display: none;
+}
+
+/* Show plus icon by default */
+.faq-question .plus-icon {
+    display: block;
+}
+
+/* When checkbox is checked */
+.faq-checkbox:checked + .faq-question {
+    background: orangered;
+}
+
+.faq-checkbox:checked + .faq-question h3 {
+    color: white;
+}
+
+.faq-checkbox:checked + .faq-question .material-symbols-outlined {
+    color: white;
+}
+
+.faq-checkbox:checked + .faq-question .plus-icon {
+    display: none;
+}
+
+.faq-checkbox:checked + .faq-question .minus-icon {
+    display: block;
+}
+
+/* FAQ Answer Styling */
+.faq-answer {
+    padding: 0 30px;
+    background: rgba(255, 255, 255, 0.140);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-checkbox:checked ~ .faq-answer {
+    max-height: 500px; /* Adjust based on your content */
+    padding: 20px 30px;
+}
+
+.faq-answer p {
+    font-family: "Outfit", sans-serif;
+    color: white;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Add border between question and answer when open */
+.faq-checkbox:checked ~ .faq-answer p {
+    padding: 20px 0;
+}
+
+/* Trial Section */
+.trial-section {
+    margin: 60px 150px 120px;
+    padding: 60px 40px;
+    background: orangered;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+
+.trial-content h2 {
+    color: orangered;
+    margin-bottom: 10px;
+}
+
+.trial-content h2:nth-of-type(2) {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.trial-content p {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.trial-features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.trial-features p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.trial-features .material-symbols-outlined {
+    background: orangered;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.trial-button {
+    display: inline-block;
+    padding: 18px 45px;
+    background: orangered;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.trial-button:hover {
+    background: #ff8533;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3);
+}
+
+/* Testimonials */
+.member-testimonials {
+    background: url('pics/background-8022258.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px;
+}
+
+.member-testimonials h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.testimonials-container {
+    display: flex;
+    gap: 30px;
+}
+
+.testimonial-card {
+    width: 500px;
+    background: white;
+    background: rgba(255, 255, 255, 0.140);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+
+.testimonial-header h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.testimonial-header p {
+    margin: 5px 0 0;
+    color: #808080;
+    font-size: 0.9rem;
+}
+
+.testimonial-text {
+    font-family: "Outfit", sans-serif;
+    color: #ccc;
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.rating {
+    color: orangered;
+    font-size: 1.2rem;
+}
+
+/* Final CTA */
+.final-cta {
+    padding: 60px 40px;
+    background: #0a0a0a;
+    color: white;
+    text-align: center;
+}
+
+.cta-container h2 {
+    margin-bottom: 15px;
+}
+
+.cta-container > p {
+    font-size: 1.2rem;
+    color: #ccc;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.cta-stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 3rem;
+    color: orangered;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-family: "Outfit", sans-serif;
+    color: #ccc;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.join-now-button {
+    display: inline-block;
+    padding: 18px 50px;
+    background: orangered;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    margin: 30px 0;
+}
+
+.join-now-button:hover {
+    background: #ff8533;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 107, 0, 0.4);
+}
+
+.cta-note {
+    color: #999;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .table-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .feature-col{
+        display: none;
+    }
+
+    .table-body{
+        display: none;
+    }
+    
+    .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .membership-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 40px 60px;
+        gap: 30px;
+    }
+    .hero-content { width: 100%; }
+    .hero-content p { width: 100%; }
+
+    .highlight{ font-size: 2rem;}
+    .join-process { padding: 50px 30px; }
+    .process-steps { flex-direction: column; gap: 20px; }
+    .step { padding: 25px 20px; }
+
+    .trial-section { margin: 40px 30px 80px; padding: 50px 30px; }
+
+    .member-testimonials { padding: 60px 30px; }
+    .testimonials-container { flex-direction: column; gap: 20px; }
+    .testimonial-card { width: 100%; }
+
+    .final-cta { padding: 60px 30px; }
+}
+
+@media (max-width: 768px) {
+    h2, .highlight { font-size: 2.5rem !important; }
+    h1, h1 .highlight{ font-size: 3.5rem !important;}
+    .hero-content p { font-size: 1rem; }
+    .cta-button { padding: 13px 30px; font-size: 16px; }
+
+    
+    .section-subtitle { font-size: 1rem; }
+    .membership-comparison { padding: 30px 12px 40px; }
+    .comparison-table, .table-header{ 
+        background: none; 
+    }
+    .table-header {
+        padding: 0;
+    }
+    .plan-col{
+        gap: 0px;
+        padding: 15px;
+        border-radius: 20px;
+        background: black;
+        border-left: none;
+        border: 1px solid white;
+    }
+    .plan-col h3, .plan-col .price{
+        font-size: 2.5rem;
+        line-height: 40px;
+    }
+    .plan-col .price span{font-size: 1.5rem;}
+    .select-plan { 
+        width: auto;
+        font-size: 20px;
+        padding: 5px 20px; 
+    }
+
+    .features{
+        padding: 15px 5px 0 ;
+        width: 100%;
+        display: flex;  
+        justify-content: space-between;
+        *{
+            color: rgb(230, 230, 230);
+            font-family: "Outfit", sans-serif;
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+            font-weight: 500;
+        }  
+    }
+    .feats{
+        text-align: left;
+        white-space: pre-line;
+    }
+    .desc{ 
+            
+        text-align: right;
+        white-space: pre-line;
+    }
+    .plan-col.popular .features *{color: black;}
+
+    .join-process { padding: 40px 20px; }
+    .join-process h2 { margin-bottom: 30px; }
+    .step-number { width: 50px; height: 50px; font-size: 1.5rem; }
+    .step h3 { font-size: 1.4rem; }
+
+    .faq-section { padding: 30px 20px; }
+    .faq-question { padding: 18px 20px; }
+    .faq-question h3 { font-size: 1rem; }
+    .faq-answer { padding: 0 20px; }
+    .faq-checkbox:checked ~ .faq-answer { padding: 15px 20px; }
+
+    .trial-section { margin: 30px 0; border-radius: 10px; padding: 40px 20px; }
+    .trial-content p { font-size: 1rem; }
+    .trial-features { flex-direction: column; align-items: flex-start; gap: 12px; }
+    .trial-button { padding: 14px 35px; font-size: 1rem; }
+
+    .member-testimonials { padding: 50px 20px; }
+
+    .final-cta { padding: 50px 20px; }
+    .cta-container > p { font-size: 1rem; }
+    .cta-stats { gap: 25px; }
+    .stat h3 { font-size: 2.5rem; }
+    .join-now-button { padding: 15px 35px; font-size: 1.1rem; }
+}
+

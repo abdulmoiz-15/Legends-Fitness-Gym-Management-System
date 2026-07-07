@@ -1,0 +1,452 @@
+.programs-hero {
+    padding: 150px 50px 80px;
+    background: linear-gradient(135deg, rgba(34, 34, 34, 0.95) 0%, rgba(0, 0, 0, 0.9) 100%);
+    width: 100%;
+    background-image: url('https://www.kalosgym.nl/wp-content/uploads/2025/09/DSC08324-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.programs-hero .hero-content {
+    width: 100%;
+    color: white;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, .highlight{font-family: "New Amsterdam", sans-serif;}
+h2{
+    text-align: center;
+    color: white;
+    font-size: 3rem !important;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+.highlight{
+    color: orangered;
+    font-size: 3rem;
+}
+
+h1, h1 .highlight {
+    font-size: 6rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.programs-hero .hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-family: "Outfit", sans-serif;
+    color: #ccc;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.programs-hero .hero-stats {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.programs-hero .stat-item {
+    display: flex;
+    align-items: center;
+}
+
+.programs-hero .stat-item span {
+    font-size: 30px;
+    color: orangered;
+    margin-right: 10px;
+}
+
+.programs-hero .stat-item div {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+}
+
+/* Categories Section */
+.categories-section {
+    padding: 50px;
+    background: linear-gradient(135deg, rgba(34, 34, 34, 0.95) 0%, rgba(0, 0, 0, 0.9) 100%);
+    text-align: center;
+    width: 100%;
+}
+
+.categories-section .section-subtitle {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 40px;
+    font-family: "Outfit", sans-serif;
+}
+
+/* Category Filters */
+.category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 0;
+}
+
+.category-radio {
+    display: none;
+}
+
+.category-label {
+    padding: 12px 25px;
+    background-color: rgba(78, 78, 78, 0.300);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-label:hover {
+    border-color: orangered;
+}
+
+.category-radio:checked + .category-label {
+    background-color: orangered;
+    border-color: orangered;
+}
+
+/* Programs Section */
+.programs {
+    padding: 50px;
+    background-color: black;
+    width: 100%;
+}
+
+.programs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Program Boxes */
+.program-box {
+    width: 48%;
+    background-color: rgba(78, 78, 78, 0.300);
+    padding: 25px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.program-box:hover {
+    border-color: orangered;
+}
+
+.program-box .icon {
+    font-size: 60px;
+    color: orangered;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.program-box h3 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+.program-box .level {
+    font-size: 14px;
+    color: orangered;
+    margin-bottom: 15px;
+    padding: 4px 12px;
+    background-color: rgba(255, 69, 0, 0.1);
+    border-radius: 15px;
+    display: inline-block;
+    font-family: "Outfit", sans-serif;
+}
+
+.program-box .description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: "Outfit", sans-serif;
+    color: #ccc;
+    min-height: 80px;
+}
+
+.program-info {
+    margin-bottom: 20px;
+}
+
+.program-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #aaa;
+    font-family: "Outfit", sans-serif;
+}
+
+.program-info span {
+    color: orangered;
+}
+
+.features {
+    margin-bottom: 25px;
+}
+
+.features h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    font-family: "Outfit", sans-serif;
+}
+
+.features ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.features li {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 6px;
+    padding-left: 15px;
+    position: relative;
+    font-family: "Outfit", sans-serif;
+}
+
+.features li::before {
+    content: '•';
+    color: orangered;
+    position: absolute;
+    left: 0;
+}
+
+.program-box .price {
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Program Filtering Logic */
+.program-box {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.category-radio {
+    display: none;
+    position: absolute;
+    left: -9999px;
+}
+
+#all:checked ~ main .categories-section .category-filters label[for="all"],
+#strength:checked ~ main .categories-section .category-filters label[for="strength"],
+#cardio:checked ~ main .categories-section .category-filters label[for="cardio"],
+#specialty:checked ~ main .categories-section .category-filters label[for="specialty"],
+#wellness:checked ~ main .categories-section .category-filters label[for="wellness"],
+#group:checked ~ main .categories-section .category-filters label[for="group"] {
+    background-color: orangered;
+    border-color: orangered;
+}
+
+#all:checked ~ main .programs-container .program-box {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 0.5s ease;
+}
+
+#strength:checked ~ main .programs-container .program-box:not(.strength),
+#cardio:checked ~ main .programs-container .program-box:not(.cardio),
+#specialty:checked ~ main .programs-container .program-box:not(.specialty),
+#wellness:checked ~ main .programs-container .program-box:not(.wellness),
+#group:checked ~ main .programs-container .program-box:not(.group) {
+    display: none;
+    opacity: 0;
+}
+
+#strength:checked ~ main .programs-container .program-box.strength,
+#cardio:checked ~ main .programs-container .program-box.cardio,
+#specialty:checked ~ main .programs-container .program-box.specialty,
+#wellness:checked ~ main .programs-container .program-box.wellness,
+#group:checked ~ main .programs-container .program-box.group {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Other sections (comparison, CTA) */
+.comparison-section {
+    padding: 50px;
+    background-color: rgba(34, 34, 34, 0.9);
+    width: 100%;
+}
+
+.comparison-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.comparison-table th {
+    background-color: rgba(255, 69, 0, 0.1);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-family: "Outfit", sans-serif;
+    border-bottom: 2px solid orangered;
+}
+
+.comparison-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ccc;
+    font-family: "Outfit", sans-serif;
+}
+
+.comparison-table tr:hover {
+    background-color: rgba(255, 69, 0, 0.05);
+}
+
+
+.programs-cta {
+    padding: 80px 50px;
+    background: #0a0a0a;
+    text-align: center;
+    width: 100%;
+}
+
+.programs-cta .cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.programs-cta p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 40px;
+    font-family: "Outfit", sans-serif;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-btn {
+    padding: 15px 40px;
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.cta-btn.primary {
+    background-color: orangered;
+    color: white;
+}
+
+.cta-btn.primary:hover {
+    background-color: #ff5722;
+}
+
+.cta-btn.secondary {
+    background-color: transparent;
+    color: orangered;
+    border: 1px solid orangered;
+}
+
+.cta-btn.secondary:hover {
+    background-color: rgba(255, 69, 0, 0.1);
+}
+
+@media (max-width: 1200px) {
+    .programs-hero { padding: 130px 40px 70px; }
+    .categories-section { padding: 40px 40px; }
+    .programs { padding: 40px 40px; }
+    .comparison-section { padding: 40px 40px; }
+    .programs-cta { padding: 70px 40px; }
+
+    .program-box { width: 47%; }
+}
+
+@media (max-width: 992px) {
+    h1{ font-size: 4.5rem; }
+    h2{font-size: 3rem;}
+
+    .program-box { width: 100%; }
+
+    .programs-hero .hero-stats { gap: 25px; }
+
+    .cta-buttons { flex-direction: column; align-items: center; gap: 15px; }
+    .cta-btn { width: 100%; max-width: 320px; text-align: center; }
+}
+
+@media (max-width: 768px) {
+    h2, h2 .highlight { font-size: 2.5rem !important; }
+    h1, h1 .highlight{font-size: 3.5rem;}
+    .programs-hero {
+        padding: 90px 20px 60px;
+    }
+    .programs-hero .hero-content p { font-size: 1rem; }
+    .programs-hero .hero-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .programs-hero .stat-item span { font-size: 24px; }
+    .programs-hero .stat-item div { font-size: 14px; }
+
+    .categories-section { padding: 35px 20px; }
+    
+    .category-label { padding: 10px 16px; font-size: 13px; }
+
+    .programs { padding: 35px 20px; }
+    .program-box { padding: 20px 15px; }
+    .program-box h3 { font-size: 1.5rem; }
+    .program-box .icon { font-size: 45px; }
+    .program-box .description { font-size: 0.9rem; min-height: auto; }
+    .program-info p { font-size: 14px; }
+    .features li { font-size: 14px; }
+
+    .comparison-section { padding: 35px 20px; }
+    .comparison-table th,
+    .comparison-table td { padding: 12px 10px; font-size: 0.85rem; }
+
+    .programs-cta { padding: 60px 20px; }
+    .programs-cta p { font-size: 1rem; }
+}

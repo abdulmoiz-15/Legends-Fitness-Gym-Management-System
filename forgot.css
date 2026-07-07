@@ -1,0 +1,821 @@
+/* Forgot Password Page Styles - Dark Theme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    background: #0a0a0a;
+    color: white;
+    min-height: 100vh;
+}
+
+.forgot-password-section {
+    padding: 100px 20px 50px;
+    min-height: 100vh;
+    background: radial-gradient(circle at 20% 50%, rgba(255, 106, 0, 0.1) 0%, transparent 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forgot-password-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.forgot-password-card {
+    background: rgba(20, 20, 20, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    padding: 50px;
+    border: 1px solid rgba(255, 107, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.forgot-password-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.05;
+    z-index: 0;
+}
+
+.forgot-password-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.password-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.password-header h1 {
+    font-family: 'New Amsterdam', sans-serif;
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-weight: 400;
+}
+
+.password-header h1 .material-symbols-outlined {
+    font-size: 3rem;
+    color: orangered;
+}
+
+.subtitle {
+    color: #ccc;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Success Message */
+.success-message {
+    background: rgba(76, 175, 80, 0.1);
+    border: 2px solid rgba(76, 175, 80, 0.3);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 0.5s ease;
+    backdrop-filter: blur(10px);
+}
+
+.success-message .material-symbols-outlined {
+    font-size: 4rem;
+    color: #4CAF50;
+    margin-bottom: 25px;
+}
+
+.success-message h3 {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.success-message p {
+    color: #ddd;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn-login {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 30px;
+    gap: 12px;
+    background: orangered;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+.btn-login .material-symbols-outlined{
+    color: white;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.btn-login:hover {
+    background: #ff8533;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3);
+}
+
+/* Recovery Options */
+.recovery-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.option-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 35px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.option-card:hover {
+    border-color: orangered;
+    box-shadow: 0 15px 40px rgba(255, 107, 0, 0.2);
+}
+
+.option-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.option-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 107, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid orangered;
+}
+
+.option-icon .material-symbols-outlined {
+    font-size: 2.5rem;
+    color: orangered;
+}
+
+.option-header h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.6rem;
+    color: white;
+    margin: 0;
+    font-weight: 600;
+}
+
+.option-description {
+    color: #aaa;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Forms */
+.option-form {
+    margin-top: 25px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    color: #ddd;
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.form-group label .material-symbols-outlined {
+    font-size: 1.3rem;
+    color: orangered;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 17px 20px 17px 50px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    color: white;
+    position: relative;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #7a7a7a;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: orangered;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Input with icon positioning */
+.form-group {
+    position: relative;
+}
+
+.form-group label .material-symbols-outlined:first-child {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    z-index: 2;
+}
+
+/* Buttons */
+.btn-send-request,
+.btn-check-approval,
+.btn-reset-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-send-request {
+    background: orangered;
+    color: white;
+}
+
+.btn-send-request:hover {
+    background: #ff8533;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3);
+}
+
+.btn-check-approval {
+    background: rgba(46, 204, 113, 0.2);
+    color: #2ecc71;
+    border: 2px solid #2ecc71;
+}
+
+.btn-check-approval:hover {
+    background: rgba(46, 204, 113, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(46, 204, 113, 0.2);
+}
+
+.btn-reset-password {
+    background: rgba(155, 89, 182, 0.2);
+    color: #9b59b6;
+    border: 2px solid #9b59b6;
+}
+
+.btn-reset-password:hover {
+    background: rgba(155, 89, 182, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(155, 89, 182, 0.2);
+}
+
+/* Error Messages */
+.error {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ff6b6b;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    margin-top: 8px;
+    padding: 12px 15px;
+    background: rgba(255, 107, 107, 0.1);
+    border-radius: 8px;
+    border-left: 4px solid #ff6b6b;
+}
+
+.error .material-symbols-outlined {
+    font-size: 1.1rem;
+    color: #ff6b6b;
+}
+
+/* Approval Container */
+.approval-container {
+    margin-top: 35px;
+    animation: fadeIn 0.5s ease;
+}
+
+.no-approval,
+.approval-status,
+.reset-form-container {
+    animation: slideUp 0.5s ease;
+}
+
+.no-approval {
+    text-align: center;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    border: 2px dashed rgba(255, 255, 255, 0.1);
+}
+
+.no-approval .material-symbols-outlined {
+    font-size: 3.5rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.no-approval p {
+    color: #aaa;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.no-approval small {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Status Cards */
+.status-card {
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.status-card.pending {
+    background: rgba(255, 193, 7, 0.1);
+    border: 2px solid rgba(255, 193, 7, 0.3);
+}
+
+.status-card.approved {
+    background: rgba(46, 204, 113, 0.1);
+    border: 2px solid rgba(46, 204, 113, 0.3);
+}
+
+.status-card .material-symbols-outlined {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.status-card.pending .material-symbols-outlined {
+    color: #ffc107;
+}
+
+.status-card.approved .material-symbols-outlined {
+    color: #2ecc71;
+}
+
+.status-card h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: 600;
+}
+
+.status-card p {
+    color: #ddd;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.status-card small {
+    color: #aaa;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 15px;
+    font-family: monospace;
+    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.instruction {
+    font-style: italic;
+    color: orangered !important;
+    margin-top: 20px !important;
+    font-weight: 500;
+}
+
+/* Reset Password Form */
+.reset-password-form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin-top: 25px;
+}
+
+/* Recovery Info */
+.recovery-info {
+    background: rgba(255, 107, 0, 0.1);
+    border-radius: 15px;
+    padding: 35px;
+    margin: 50px 0;
+    border: 2px solid rgba(255, 107, 0, 0.2);
+    border-left: 5px solid orangered;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.info-box div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-box .material-symbols-outlined {
+    font-size: 3rem;
+    color: orangered;
+    margin-right: 15px;
+}
+
+.info-box h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 600;
+}
+
+.info-box ol {
+    margin-left: 20px;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.info-box li {
+    margin-bottom: 12px;
+    padding-left: 10px;
+}
+
+.info-box li::marker {
+    color: orangered;
+    font-weight: bold;
+}
+
+.contact-support {
+    text-align: center;
+    padding-top: 25px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-support p {
+    color: #aaa;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.contact-support a {
+    display: inline-flex;
+    margin-left: 20px;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 10px;
+    background: rgba(255, 107, 0, 0.2);
+    border: 2px solid orangered;
+    transition: all 0.3s ease;
+}
+
+.contact-support a:hover {
+    background: orangered;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3);
+}
+
+/* Navigation Links */
+.navigation-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding-top: 35px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .navigation-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 18px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    flex: 1;
+    font-size: 1.1rem;
+}
+
+.nav-link:first-child {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ccc;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-link:last-child {
+    background: orangered;
+    color: white;
+    border: 2px solid orangered;
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
+}
+
+.nav-link:first-child:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.nav-link:last-child:hover {
+    background: #ff8533;
+    border-color: #ff8533;
+    box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .forgot-password-card {
+        padding: 30px 25px;
+    }
+    
+    .password-header h1 {
+        font-size: 2.2rem;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .option-card {
+        padding: 25px;
+    }
+    
+    .recovery-info {
+        padding: 25px;
+    }
+    
+    .info-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .info-box .material-symbols-outlined {
+        margin: 0 auto;
+    }
+}
+
+/* Password Display */
+.password-display {
+    font-family: 'Courier New', monospace;
+    background: rgba(44, 62, 80, 0.5);
+    color: #2ecc71;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border: 1px solid #2ecc71;
+}
+
+/* Fix for autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgba(20, 20, 20, 0.95) inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1200px) {
+    .forgot-password-card { padding: 40px; }
+    .recovery-options { gap: 20px; }
+}
+
+@media (max-width: 992px) {
+    .recovery-options {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .forgot-password-card { padding: 35px 30px; }
+
+    .password-header h1 { font-size: 2.3rem; }
+
+    .info-box {
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .forgot-password-section {
+        padding: 80px 15px 40px;
+    }
+
+    .forgot-password-card {
+        padding: 25px 18px;
+        border-radius: 15px;
+    }
+
+    .password-header {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+
+    .password-header h1 {
+        font-size: 1.9rem;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .password-header h1 .material-symbols-outlined { font-size: 2.4rem; }
+
+    .subtitle { font-size: 0.95rem; }
+
+    .recovery-options {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .option-card { padding: 22px 18px; }
+
+    .option-header { gap: 12px; margin-bottom: 15px; }
+
+    .option-icon {
+        width: 55px;
+        height: 55px;
+        border-radius: 12px;
+    }
+    .option-icon .material-symbols-outlined { font-size: 2rem; }
+
+    .option-header h3 { font-size: 1.3rem; }
+
+    .btn-send-request,
+    .btn-check-approval,
+    .btn-reset-password {
+        padding: 14px;
+        font-size: 1rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 14px 15px 14px 45px;
+        font-size: 0.95rem;
+    }
+
+    .recovery-info {
+        padding: 22px 18px;
+        margin: 30px 0;
+    }
+
+    .info-box {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .info-box .material-symbols-outlined { font-size: 2.3rem; }
+    .info-box h4 { font-size: 1.2rem; }
+
+    .contact-support { padding-top: 18px; }
+    .contact-support a { margin-left: 10px; padding: 12px 18px; }
+
+    .navigation-links {
+        flex-direction: column;
+        gap: 12px;
+        padding-top: 25px;
+    }
+
+    .nav-link {
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+
+    .success-message { padding: 28px 18px; }
+    .success-message h3 { font-size: 1.5rem; }
+    .success-message p { font-size: 1rem; }
+
+    .status-card { padding: 22px 15px; }
+    .status-card h4 { font-size: 1.3rem; }
+    .status-card p { font-size: 0.95rem; }
+
+    .reset-password-form { padding: 22px 18px; }
+}
+
+@media (max-width: 480px) {
+    .forgot-password-section { padding: 70px 10px 30px; }
+    .forgot-password-card { padding: 20px 14px; }
+
+    .password-header h1 { font-size: 1.6rem; }
+    .password-header h1 .material-symbols-outlined { font-size: 2rem; }
+
+    .option-header h3 { font-size: 1.15rem; }
+    .option-card { padding: 18px 14px; }
+
+    .info-box ol { margin-left: 15px; font-size: 0.9rem; }
+
+    .nav-link { padding: 12px 15px; font-size: 0.95rem; }
+
+    .contact-support { flex-direction: column; gap: 10px; }
+    .contact-support a { margin-left: 0; width: 100%; justify-content: center; }
+}
