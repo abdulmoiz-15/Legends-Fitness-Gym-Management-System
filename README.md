@@ -14,7 +14,7 @@ It includes membership management, trainer scheduling, fitness programs, and adm
 
 3. **Set up the database**
    - Open **phpMyAdmin** (via XAMPP).
-   - Create a new database called 'gym'.
+   - Create a new database called `gym`.
    - Import the `gym.sql` file to load all required tables and data.
 
 4. **Start the server**
