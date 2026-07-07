@@ -7,7 +7,6 @@ real-world gym operations.
 **Live Demo:** https://legendsfitness.site.je
 
 ## Features
-
 ### Member Features
 - Sign up / Sign in
 - Dashboard with fitness overview (workout streak, calories burned, body measurements)
@@ -48,22 +47,30 @@ All relationships are enforced using primary and foreign keys to maintain data i
 
 1. **Clone the repository**
 
-2. **Add images**
+2. **Add PHP files**
+   - Download all PHP files from the `php` branch of this repository.
+   - Place them directly in the **website files directory** (do NOT create a separate `php` folder).
+
+3. **Add CSS files**
+   - Download all CSS files from the `css` branch of this repository.
+   - Place them directly in the **website files directory** (do NOT create a separate `css` folder).
+
+4. **Add images**
    - Download all images from the `images` branch of this repository.
    - Create a folder named `pics` in the same directory as the website files.
    - Place all downloaded images inside the `pics` folder.
 
-3. **Set up the database**
+5. **Set up the database**
    - Open **phpMyAdmin** (via XAMPP).
    - Create a new database called `gym`.
    - Import the `gym.sql` file to load all required tables and data.
 
-4. **Start the server**
+6. **Start the server**
    - Open **XAMPP Control Panel**.
    - Start **Apache** and **MySQL**.
    - Move the project folder into `htdocs` (if not already there).
 
-5. **Run the project**
+7. **Run the project**
    - Open your browser and go to `http://localhost/your-project-folder-name`.
 
 ## Requirements
