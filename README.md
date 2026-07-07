@@ -4,7 +4,7 @@ It was developed as a semester project for Introduction to Database Systems, foc
 relational database design (3NF normalization) with a functional web interface for 
 real-world gym operations.
 
-**Live Demo:** https://your-live-demo-url.com
+**Live Demo:** https://legendsfitness.site.je
 
 ## Features
 
